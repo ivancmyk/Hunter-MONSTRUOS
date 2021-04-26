@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta author="Rafael Sojo">
+    <title> MONSTER HUNTER (Encuentra a tu Monstruo)</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="js/toastify.js"></script>
+    <script src="js/Casilla.js"></script>
+    <script src="js/buscaminas.js"></script>
+    <script src="js/init.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/toastify.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <h1 style="color: azure;">MONSTER HUNTER</h1>
+        <p  style="color: rgb(252, 228, 89); font-size: 19px;">Encuentra a tu Monstruo</p>
+        
+        
+        <div class="entornoJuego">
+            <header>
+                <div class="tiempo"><span id="tiempoTranscurrido"><span id="minutos">00</span>:<span id="segundos">00</span></span>
+                    <i class="fas fa-clock"></i></div>
+                <div class="banderas" style="margin-right: 0px">
+                    <span id="numBanderas">0</span>
+                </div>
+                <div class="banderas" style="margin-left: 0px;">
+                    <span>/</span> <span id="banderasTotales"></span> <span><i class="fas fa-flag"></i></span>
+                </div>
+                <div class="dificultad">
+                    <select name="dificultad" id="select-dificultad">
+                        <option value="1">Fácil</option>
+                        <option value="2">Medio</option>
+                        <option value="3">Difícil</option>
+                    </select>
+                </div>
+                <div class="reiniciar">
+                    <i class="fas fa-undo-alt"></i>
+                </div>
+            </header>
+            <div class="tableroJuego Tablero" id="tableroJuego"></div>
+        </div>
+        <audio id="reproductor">
+            Su navegador no soporta el elemento de audio.
+        </audio>
+        <noscript>
+            Su navegador no soporta JavaScript. JavaScript es necesario para esta página.
+        </noscript>
+    </main>
+</body>
+
+</html>
